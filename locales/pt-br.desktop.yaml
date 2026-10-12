@@ -5031,7 +5031,7 @@ connectorsPage:
     available: Disponíveis
     connected: Conectados
     'off': Desativados
-  title: Conectores
+  title: Conecte seus apps
   tools:
     allToolsSwitch: Ativar ou desativar todas as ferramentas
     conflictTitle: Alguém mudou esta regra enquanto você editava.
