@@ -1,0 +1,16 @@
+name: hermes-lang-pt-br
+version: 0.1.0
+description: >-
+  Portuguese (Brazil) language pack for the Hermes Desktop app — full UI catalog
+  in pt-BR over the shared `pt` id. Core CLI/gateway and TUI catalogs already ship
+  in Portuguese upstream; this pack covers the desktop surface.
+  Disclosure — text-only language pack; no code, no network.
+author: Henrick Silva
+license: MIT
+homepage: https://github.com/henrickgu/hermes-lang-pt-br
+tags: [i18n, language-pack, portuguese, pt-br]
+requires_hermes: ">=0.22"
+provides_locales:
+  - id: pt-br
+    endonym: Português (Brasil)
+    rtl: false
