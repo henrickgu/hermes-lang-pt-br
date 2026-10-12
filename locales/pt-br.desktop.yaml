@@ -149,65 +149,89 @@ fileMenu:
   revealUnavailable: Esse caminho não está neste computador — ele fica na máquina do backend. Use “Revelar na árvore de arquivos”.
   deleteTitle: Excluir {0}?
 boot:
-  ready: Hermes Desktop pronto
+  ready: O Hermes Desktop está pronto
   steps:
     connectingGateway: Conectando ao gateway do desktop
-    loadingSettings: Carregando configurações do Hermes
+    loadingSettings: Carregando as configurações do Hermes
     loadingSessions: Carregando sessões recentes
     retryingRemoteBackend: Reconectando ao backend remoto do Hermes…
-    startingDesktopConnection: Iniciando conexão do desktop
-    startingHermesDesktop: Iniciando Hermes Desktop…
+    startingDesktopConnection: Iniciando a conexão do desktop
+    startingHermesDesktop: Iniciando o Hermes Desktop…
   errors:
-    backgroundExited: Processo em segundo plano do Hermes foi encerrado.
-    backgroundExitedDuringStartup: Processo em segundo plano do Hermes foi encerrado durante a inicialização.
-    backendStopped: Backend parado
-    desktopBootFailed: Falha ao iniciar o Desktop
-    gatewayConnectionLost: Conexão com o gateway perdida
-    gatewayConnectionLostDetail: Ainda tentando reconectar em segundo plano. Pode continuar lendo e escrevendo — abra as configurações de Gateway se isso persistir.
-    gatewaySignInRequired: É necessário fazer login no gateway
-    ipcBridgeUnavailable: Ponte IPC do Desktop indisponível.
+    backgroundExited: O serviço que roda suas conversas fechou inesperadamente. Reinicie-o para continuar — suas conversas e configurações estão seguras.
+    backgroundExitedDuringStartup: O Hermes parou logo após iniciar.
+    backendStopped: O Hermes parou de funcionar em segundo plano
+    desktopBootFailed: O Hermes não pôde iniciar
+    gatewayConnectionLost: O Hermes perdeu a conexão
+    gatewayConnectionLostDetail: Ainda tentando reconectar. Você pode continuar lendo e escrevendo. Se persistir, reconecte agora ou verifique suas configurações de conexão.
+    gatewaySignInRequired: Seu Hermes remoto encerrou sua sessão
+    ipcBridgeUnavailable: O Hermes Desktop não conseguiu falar com sua própria camada de segundo plano. Reinicie o app.
     restartHermes: Reiniciar o Hermes
     openLogs: Abrir logs
     reconnectNow: Reconectar agora
     connectionSettings: Configurações de conexão
-    gatewaySignInRequiredDetail: Entre novamente para reconectar. Seus chats e configurações estão seguros.
+    gatewaySignInRequiredDetail: Entre novamente para reconectar. Suas conversas e configurações estão seguras.
     signInAgain: Entrar novamente
   failure:
-    title: Hermes não conseguiu iniciar
-    description: O gateway em segundo plano não subiu. Tente uma das opções de recuperação abaixo. Nada aqui apaga suas conversas ou configurações.
+    title: O Hermes não pôde iniciar
+    description: O serviço em segundo plano do Hermes não subiu. Tente uma das etapas de recuperação abaixo. Nada aqui apaga suas conversas ou configurações.
     remoteTitle: Login no gateway remoto necessário
-    remoteDescription: Sua sessão do gateway remoto expirou. Faça login novamente para reconectar. Nada aqui apaga suas conversas ou configurações.
+    remoteDescription: Sua sessão de gateway remoto expirou. Entre novamente para reconectar. Nada aqui apaga suas conversas ou configurações.
     retry: Tentar novamente
     repairInstall: Reparar instalação
     useLocalGateway: Usar gateway local
     gatewaySettings: Configurações do gateway
     back: Voltar
     openLogs: Abrir logs
-    repairHint: O reparo reexecuta o instalador e pode levar alguns minutos em uma máquina nova.
-    signOutAndSignIn: Sair e entrar novamente
-    remoteFailureHint: Verifique a URL do gateway e o login em Configurações do gateway, ou mude para o gateway local.
-    cloudDownTitle: Agente da Nous Cloud fora do ar
-    cloudDownDescription: O agente em nuvem gerenciado pela Nous ao qual este gateway se conecta está retornando erro de servidor. Não dá para reiniciar por aqui — verifique o status, mude para o gateway local ou peça suporte.
+    repairHint: O reparo executa o instalador de novo e pode levar alguns minutos em uma máquina nova.
+    signOutAndSignIn: Sair e entrar
+    remoteFailureHint: Verifique a URL do gateway e o login nas Configurações do gateway, ou mude para o gateway local.
+    cloudDownTitle: O agente Nous Cloud está fora do ar
+    cloudDownDescription: O agente na nuvem gerenciado pela Nous, ao qual este gateway se conecta, está retornando um erro de servidor. Não é possível reiniciá-lo daqui — verifique o status, mude para o gateway local ou busque suporte.
     cloudDownHint: Os botões abaixo abrem o Portal da Nous (status e controles da instância) e nosso Discord para suporte.
-    cloudDownCheckPortal: Ver status no Portal
+    cloudDownCheckPortal: Verificar status do Portal
     cloudDownDiscord: Pedir ajuda no Discord
     hideRecentLogs: Ocultar logs recentes
     showRecentLogs: Mostrar logs recentes
-    signedInTitle: Conectado
+    signedInTitle: Sessão iniciada
     signedInMessage: Reconectando ao gateway remoto…
     signInIncompleteTitle: Login incompleto
-    signInIncompleteMessage: A janela de login foi fechada antes de concluir a autenticação.
+    signInIncompleteMessage: A janela de login fechou antes da autenticação terminar.
     signInFailed: Falha no login
     signInToRemoteGateway: Entrar no gateway remoto
     identityProvider: seu provedor de identidade
     details: Detalhes
+    bundledReinstallHint: Esta instalação empacotada não pode se reparar de dentro do app — reinstale o app para restaurar o backend.
+    reinstallApp: Reinstalar o app
+    remoteSignInHint: Encerra a sessão remota salva no navegador e abre {0}. Use "Usar gateway local" para mudar para o backend empacotado.
+    signInWithProvider: Entrar com {0}
   causes:
-    exitedEarly: O serviço em segundo plano do Hermes parou logo depois de iniciar.
+    exitedEarly: O serviço em segundo plano do Hermes parou logo após iniciar.
     timedOut: O serviço em segundo plano do Hermes não respondeu a tempo.
-    permission: O Hermes não conseguiu gravar na pasta de dados (problema de permissão).
+    permission: O Hermes não pôde escrever na sua pasta de dados (problema de permissão).
     diskFull: O disco está cheio, então o Hermes não pôde iniciar.
-    portInUse: Outro programa está usando a porta de rede de que o Hermes precisa.
+    portInUse: Outro programa está usando a porta de rede que o Hermes precisa.
     installMissing: Parte da instalação do Hermes está faltando. Escolha Reparar instalação para restaurá-la.
+  desktopBootFailedWithMessage: 'Falha ao iniciar o desktop: {0}'
+  updateHold:
+    checkAgain: Verificar novamente
+    confirmBody: O processo de atualização restante ainda pode estar alterando arquivos do Hermes. Iniciar agora pode carregar uma instalação meio atualizada, que pode não funcionar até você rodar a atualização de novo. O Hermes registra esta escolha no log e mantém o marcador de atualização.
+    confirmKeepWaiting: Continuar esperando
+    confirmStart: Iniciar mesmo assim
+    confirmTitle: Iniciar o Hermes enquanto a atualização ainda o retém?
+    description: O Hermes está segurando o início para não carregar arquivos que uma atualização ainda pode estar alterando. Ele começa sozinho assim que a retenção terminar.
+    heldByProcess: A atualização (processo {0}) saiu, mas um processo que ela iniciou ainda retém a instalação do Hermes.
+    heldUnknown: Uma atualização saiu, mas um processo que ela iniciou ainda retém a instalação do Hermes.
+    lastChecked: Última verificação {0}
+    openLogs: Abrir logs
+    quit: Sair do Hermes
+    recoveryHint: 'Isso geralmente se resolve em alguns minutos. Se não resolver: saia do Hermes, encerre processos git ou hermes restantes (ou reinicie o computador) e abra o Hermes de novo.'
+    since: Aguardando desde {0}
+    startAnyway: Iniciar mesmo assim…
+    startAnywayRefused: O que retém a instalação mudou antes de o Hermes poder iniciar. Revise e tente de novo.
+    title: Uma atualização anterior ainda retém o Hermes
+    titleUnverified: O Hermes não pode confirmar que a última atualização terminou
+    unverified: O helper de atualização não pôde verificar quem é o dono da instalação do Hermes agora. O Hermes continua verificando.
 notifications:
   region: Notificações
   hide: Ocultar
